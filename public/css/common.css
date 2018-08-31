@@ -1,0 +1,2232 @@
+/*****************
+ Goal Edit-Delete
+******************/
+.goal-edit .goal-category, .goal-edit .goal-descrption {
+	border-bottom: 3px solid #eee;
+}
+.goal-edit h5, .person-edit label {
+	font-size: 20px;
+	color: #c5c5c5;
+	padding-bottom: 15px;
+	display: block;
+}
+.goal-edit h3, .goal-edit .goal-descrption input[type="text"], .person-edit input[type="text"], .person-edit textarea {
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #056690;
+	padding-bottom: 14px;
+	width: 100%;
+}
+.person-edit textarea {
+	height: 120px;
+	resize: none;
+}
+.person-edit input[type="text"]::-webkit-input-placeholder, .person-edit textarea::-webkit-input-placeholder, .person-edit input[type="text"]::placeholder, .person-edit textarea::placeholder {
+ color:#799faf;
+}
+.person-edit input[type="text"], .person-edit textarea {
+	text-transform: none;
+}
+.person-edit {
+	margin-bottom: 20px;
+	position: relative;
+}
+.person-edit i.fa {
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+	font-size: 18px;
+	color: #056690;
+}
+.submit-btn {
+	height: 40px;
+	width: 250px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 40px;
+	font-family: Arciform;
+	background: #056690;
+	border-radius: 40px;
+	margin: 50px auto 0 auto;
+	display: block;
+}
+.back-link {
+	padding: 25px 0 25px 50px;
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,.1);
+	margin: 0 -15px 20px -15px;
+}
+.back-link i {
+	font-size: 24px;
+	color: #0a0a0a;
+}
+.goal-table table {
+	width: 100%;
+}
+.goal-table {
+	margin-top: 35px;
+}
+.goal-table table th {
+	font-size: 16px;
+	font-weight: bold;
+	color: #1b1b1b;
+	border-bottom: 3px solid #eee;
+	padding: 15px;
+}
+.goal-table table td {
+	font-size: 18px;
+	color: #1b1b1b;
+	border-bottom: 3px solid #eee;
+	padding: 15px 0;
+}
+ul.save-btns {
+	text-align: center;
+	margin-top: 250px;
+}
+ul.save-btns li {
+	display: inline-block;
+	background: #056690;
+	border-radius: 40px;
+}
+ul.save-btns li a {
+	height: 40px;
+	width: 200px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 40px;
+	font-family: Arciform;
+}
+ul.save-btns li.inactive {
+	background: #dae8ee;
+	margin-top: 30px;
+}
+.action-btn button {
+	background: transparent;
+	margin: 0 5px;
+}
+button#bEdit span {
+	color: #299fcd;
+	margin-right: 15px;
+}
+button#bElim span, button#bCanc span {
+	color: #e5313e;
+}
+button#bAcep span {
+	color: #88ef88;
+}
+div#addNewRow, .addNewRow {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #056690;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	float: right;
+	padding: 10px 15px;
+	margin-top: 25px;
+	cursor: pointer;
+}
+div#addNewRow i {
+	padding-right: 10px;
+}
+/**********************
+Partner Listing
+*********************/
+.serach-bar {
+	width: 600px;
+	margin: 20px auto 60px auto;
+}
+.search-box {
+	background: #eaf7fc;
+	border-radius: 10px;
+	padding: 12px 20px;
+	width: 550px;
+	float: left;
+}
+.serach-bar input[type="search"] {
+	background: transparent;
+	font-size: 18px;
+	color: #84969d;
+	padding: 3px 5px;
+	margin-left: 20px;
+	width: 85%;
+}
+.serach-bar input[type="search"]::-webkit-input-placeholder, .serach-bar input[type="search"]::placeholder {
+ color: #84969d;
+}
+.serach-bar span.plus-icon i {
+	font-size: 24px;
+}
+.serach-bar span.plus-icon {
+	margin: 12px 0 12px 20px;
+	display: inline-block;
+	color: #84969d;
+}
+.search-box i {
+	vertical-align: text-bottom;
+	color: #a5b8bf;
+	font-size: 20px;
+}
+.partner-item {
+	border-bottom: 3px solid #eee;
+	padding: 10px 0;
+}
+.partner-item:last-child {
+	border: none;
+}
+.partner-item .partner-logo, .company-logo {
+	width: 90px;
+	height: 90px;
+	border: 1px solid #e7e7e7;
+	border-radius: 50%;
+	position: relative;
+}
+.partner-item .partner-logo img, .company-logo img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.partner-item h3.partner-name {
+	font-size: 22px;
+	color: #141414;
+	padding: 25px 0 25px 25px;
+}
+.partner-item .partner-info {
+	margin-right: 15px;
+}
+.partner-item .partner-info.edit-info {
+	margin-right: 0;
+	margin-top: 25px;
+}
+/*.partner-item .partner-info a {
+	font-size: 60px;
+	color: #98a6ab;
+	line-height: 1;
+}*/
+.partner-item .partner-info.edit-info a {
+	font-size: 16px;
+	color: #fff;
+	background: #848484;
+	width: 95px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 5px;
+}
+/**********************
+Partner Listing Edit
+*********************/
+.partner-edit .company-title {
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,.1);
+	padding: 15px 0;
+	margin-bottom: 15px;
+}
+.partner-edit .input-box {
+	border: 1px solid #9a9a9a;
+	border-radius: 3px;
+	margin: 22px 0 0 15px;
+	padding: 10px;
+}
+.partner-edit .company-title i {
+	color: #69b5d8;
+	cursor: pointer;
+}
+.partner-edit .company-title input {
+	font-size: 18px;
+	color: #0a0a0a;
+	padding: 3px;
+	width: 200px;
+}
+.partner-edit .edit-box {
+	border-bottom: 3px solid #eee;
+	min-height: 200px;
+}
+.partner-edit .edit-box h4, .goal-table h4 {
+	font-size: 18px;
+	color: #c5c5c5;
+	padding-bottom: 15px;
+}
+.partner-edit .edit-box textarea {
+	font-size: 19px;
+	color: #799faf;
+	width: 100%;
+	height: 140px;
+	resize: none;
+	font-weight: 700;
+}
+.partner-edit div#addNewRow {
+	margin-bottom: 30px;
+}
+.partner-edit .edit-box textarea::-webkit-input-placeholder, .partner-edit .edit-box input[type="text"]::-webkit-input-placeholder, .partner-edit .edit-box textarea::placeholder, .partner-edit .edit-box input[type="text"]::placeholder {
+ color:#799faf;
+}
+.partner-edit .edit-box .company-logo {
+	margin-top: 40px;
+	float: right;
+	margin-right: 40px;
+}
+.partner-edit .edit-box h4 i {
+	color: #69b5d8;
+	cursor: pointer;
+	padding-left: 10px;
+}
+.partner-edit .edit-box .fa-link {
+	color: #299dcf;
+}
+.partner-edit .edit-box .fa-times {
+	color: #e5313e;
+}
+.partner-edit .edit-box input[type="text"] {
+	border: 1px solid #dfdfdf;
+	padding: 10px 15px;
+	width: calc(100% - 70px);
+	border-radius: 3px;
+	margin: 0 15px;
+	font-weight: 700;
+	font-size: 19px;
+	color: #799faf;
+}
+/********************
+	Team
+********************/
+.common-top {
+	position: relative;
+	margin: 15px 0;
+	padding-bottom: 15px;
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,.1);
+}
+.common-top .serach-bar {
+	margin: 0 0 0 10%;
+}
+.common-top .serach-bar, .common-top .search-box, .common-top .serach-bar input[type="search"] {
+	width: auto;
+}
+.common-top .company-logo {
+	width: 50px;
+	height: 50px;
+}
+.common-top .company-logo img {
+	width: 65%;
+}
+.common-top h3 {
+	font-size: 20px;
+	color: #0a0a0a;
+	padding: 13px 0 13px 15px;
+}
+.talk-new_msg .common-top h4 {
+	top: 0;
+}
+.common-top a.add-link {
+	padding: 14px 0;
+	color: #056690;
+	font-size: 20px;
+}
+.common-top a.go-back {
+	padding: 15px 0;
+}
+.common-top h4 {
+	position: absolute;
+	top: 18px;
+	left: 0;
+	right: 0;
+	font-size: 18px;
+	color: #0a0a0a;
+	text-align: center;
+	z-index: -1;
+}
+.common-top .serach-bar span.plus-icon {
+	color: #056690;
+}
+.common-top .fa-chevron-left {
+	color: #474747;
+	font-size: 20px;
+}
+.team-details {
+	padding-top: 20px;
+}
+.team-details h2, .event-details h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #056690;
+}
+.team-details .team-info {
+	padding: 15px 0;
+	border-bottom: 3px solid #eee;
+}
+.team-info ul.team-options li, .partner-item ul.team-options li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 0 15px;
+}
+.team-info ul.team-options li.edit-link, .partner-item ul.team-options li.edit-link {
+	display: none;
+}
+.team-info h5, .event-info h4 {
+	font-size: 20px;
+	color: #141414;
+}
+.team-info span {
+	font-size: 15px;
+	color: #7b7b7b;
+}
+.team-info ul.team-options {
+	padding: 7px 0;
+}
+.team-spl .team-info ul.team-options {
+	padding: 0 0;
+}
+.team-info ul.team-options li a, .partner-item ul.team-options li a {
+	color: #98a6ab;
+}
+.team-info ul.team-options li:first-child {
+	border-right: 2px solid #98a6ab;
+	padding-right: 20px;
+}
+.team-info ul.team-options li:first-child, .partner-item ul.team-options li:first-child {
+	font-size: 40px;
+	margin-top: -12px;
+}
+.team-spl .team-info ul.team-options li:first-child {
+	font-size: 16px;
+	margin-top: 0;
+}
+.team-add .team-info ul.team-options li:first-child {
+	border: none;
+}
+.team-add .team-name {
+	padding: 8px 0;
+}
+.partner-item ul.team-options {
+	padding: 24px 0;
+}
+/***************
+  Talk
+******************/
+.msg-box h6, .talk-details h2 {
+	color: #056690;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+.msg-content {
+	margin-bottom: 20px;
+	position: relative;
+}
+.msg-content .msg-data {
+	background: #056690;
+	color: #fff;
+	padding: 15px 7px;
+	text-align: right;
+	border-radius: 10px;
+}
+.msg-content p {
+	font-size: 20px;
+}
+.msg-content h4 {
+	font-size: 22px;
+	color: #a1d9f2;
+	padding-top: 7px;
+}
+.msg-content span.company-name {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+span.msg-date {
+	font-size: 18px;
+	color: #bdbdbd;
+	margin-top: 5px;
+}
+span.msg-date.unread-msg {
+	color: #42b5dd;
+}
+.msg-content.msg-reply {
+	width: 80%;
+}
+.msg-content.msg-reply .msg-data {
+	background: #f4f4f4;
+	color: #000;
+	text-align: left;
+}
+.msg-content.msg-reply span.msg-date {
+	float: right;
+}
+.msg-content.msg-reply span.company-name {
+	color: #000;
+}
+.msg-content.msg-reply h4 {
+	color: #056690;
+}
+.msg-reply-box {
+	border: 1px solid #799faf;
+	padding: 15px 15px;
+	border-radius: 5px;
+}
+.msg-reply-box button {
+	background: transparent;
+	float: right;
+	margin-top: 5px;
+}
+.msg-reply-box button i {
+	color: #44b7de;
+	font-size: 20px;
+}
+.msg-reply-box input[type="text"] {
+	font-size: 23px;
+	color: #000;
+	width: 80%;
+	float: left;
+}
+.msg-reply-box input[type="submit"] {
+	float: right;
+	background: #42b5dd;
+	color: #fff;
+	padding: 7px 0;
+	border-radius: 5px;
+	font-size: 18px;
+	width: 12%;
+}
+.talk-msg .company-logo {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: -60px;
+}
+.talk-msg .company-logo img {
+	width: 70%;
+}
+.talk-details {
+	margin-bottom: 20px;
+}
+.talk-details h2 {
+	padding-bottom: 0;
+	font-size: 22px;
+}
+.talk-info {
+	position: relative;
+	padding: 15px 0;
+}
+.talk-info .orange-dot {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ff9a29;
+}
+.talk-info .team-name {
+	padding-left: 40px;
+}
+.talk-info h5 {
+	color: #141414;
+	font-size: 20px;
+}
+.talk-info h5 span.company-name {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.talk-info h6 {
+	font-size: 16px;
+	color: #7b7b7b;
+	padding-top: 3px;
+}
+.talk-info span.msg-time {
+	float: right;
+	color: #42b5dd;
+	font-size: 16px;
+}
+.talk-info span.msg-time.msg-read {
+	color: #bdbdbd;
+}
+.talk-msg .msg-input {
+	padding: 15px 0;
+}
+.talk-msg .msg-input input[type="text"] {
+	width: 100%;
+	padding: 5px 0;
+	font-size: 18px;
+	color: #141414;
+}
+.talk-msg .msg-input input[type="text"]::-webkit-input-placeholder, .talk-msg .msg-input input[type="text"]::placeholder {
+ color:#bdbdbd;
+}
+.talk-msg .msg-reply-box {
+	margin-top: 100px;
+}
+/********************
+   Calender
+*****************/
+.event-details {
+	margin-bottom: 30px;
+}
+.event-info h4 span.event-date {
+	float: right;
+	color: #bdbdbd;
+	font-size: 16px;
+}
+.event-info span.event-place {
+	font-size: 18px;
+	color: #7b7b7b;
+	margin-top: 3px;
+	display: block;
+}
+span.event-place i {
+	padding-right: 5px;
+}
+.event-info {
+	padding: 15px 0;
+}
+.event-info:not(.brd-btm) {
+	padding-bottom: 0;
+}
+.event-info .event-box {
+	border-left: 5px solid #bdbdbd;
+	padding-left: 10px;
+}
+.event-details h2 {
+	padding: 25px 0 15px 0;
+}
+.event-info.active .event-box {
+	border-color: #299dcf;
+}
+.event-info.active h4 span.event-date {
+	color: #056690;
+}
+.event-info.active span.event-place i {
+	color: #ff992a;
+}
+.current-event h5.event-date {
+	color: #056690;
+}
+.current-event h5 {
+	font-size: 22px;
+	color: #1d1d1d;
+}
+.current-event h3 {
+	font-size: 25px;
+	color: #141414;
+	font-weight: bold;
+	padding: 40px 0 20px 0;
+}
+.current-event .event-place {
+	font-size: 20px;
+	color: #7b7b7b;
+}
+.current-event .event-place i {
+	color: #ff992a;
+}
+.current-event p {
+	font-size: 18px;
+	color: #141414;
+	line-height: 25px;
+	margin: 15px 0;
+}
+.current-event ul li {
+	font-size: 18px;
+	color: #000;
+	margin: 5px 0;
+}
+.current-event a.add-link {
+	font-size: 18px;
+	margin-top: 25px;
+}
+/******************
+	Information 
+*******************/
+.panel-default .panel-heading i {
+	transition: all .3s;
+}
+.panel-default .panel-heading.collapsed i {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+.panel-default .panel-heading.collapsed {
+	background: #eaf7fc;
+}
+.panel-default .panel-heading {
+	background: #d0ebf5;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #1b1b1b;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.panel-body {
+	border: none !important;
+	padding: 20px 0;
+}
+.panel {
+	border: none;
+	box-shadow: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.panel-body ul.company-info li {
+	font-size: 16px;
+	color: #1b1b1b;
+	line-height: 25px;
+}
+.panel-body ul.company-info li:last-child {
+	padding-top: 20px;
+}
+ul.contract-info li {
+	position: relative;
+	font-size: 22px;
+	color: #141414;
+	padding: 10px 0 10px 50px;
+}
+ul.contract-info li a {
+	color: #7b7b7b;
+	font-size: 16px;
+	display: block;
+}
+ul.contract-info li:before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f0c1";
+	color: #299dcf;
+	position: absolute;
+	left: 10px;
+	top: 15px;
+}
+/*************
+	Alerts
+************/
+.alerts .event-info .event-box {
+	border-left: none;
+}
+.alerts .talk-info {
+	min-height: 83px;
+}
+.progress-top .progress {
+	position: relative;
+	box-shadow: none;
+	border-radius: 10px;
+	background: #ebebeb;
+	margin-top: 10px;
+}
+.progress-top .progress-bar {
+	background: #ff992a;
+	box-shadow: none;
+	-webkit-border-radius: 10px 0 010px;
+	-moz-border-radius: 10px 0 010px;
+	border-radius: 10px 0 0 10px;
+}
+.progress-top h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #919191;
+}
+.progress-top .breakpoint {
+	background: #ff992a;
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.progress-top .breakpoint.one {
+	right: 15%;
+}
+.progress-top .breakpoint.two {
+	right: 17%;
+}
+.progress-top .submit-btn {
+	margin: 30px auto;
+}
+/***********
+	Goals
+**************/
+.goals .common-top, .b-review .common-top {
+	padding-bottom: 0;
+}
+.dashboard, .dash-code {
+	padding: 25px 0 20px;
+}
+.dashboard-data .panel-default .panel-heading {
+	background: #eaf7fc;
+}
+.dashboard h4 {
+	color: #056690;
+	font-size: 22px;
+}
+.dashboard h4 i {
+	padding-right: 10px;
+}
+.dashboard-data {
+	background: #799faf;
+	border-radius: 5px;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+}
+.dashboard-data .edit-link {
+	color: #fff;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.dashboard-data table {
+	width: 100%;
+	border: 1px solid #eee;
+	margin-bottom: 50px;
+}
+.dashboard-data .panel-body {
+	padding: 15px;
+}
+.dashboard-data table th, .dashboard-data table td {
+	font-size: 15px;
+	color: #1b1b1b;
+	font-weight: bold;
+	padding: 7px 10px;
+	border: 3px solid #eee;
+	text-align: right;
+}
+.dashboard-data table th:first-child, .dashboard-data table td:first-child {
+	text-align: left;
+}
+.dashboard-data table td {
+	font-size: 17px;
+	font-weight: normal;
+}
+.dash-code h3 {
+	color: #fff;
+	font-size: 22px;
+	padding: 5px 0;
+}
+.dash-code ul li {
+	display: inline-block;
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	margin: 0 3px;
+	font-weight: bold;
+}
+.dashboard-data .panel-body p {
+	font-size: 17px;
+	line-height: 25px;
+	color: #1b1b1b;
+	margin-bottom: 15px;
+}
+/*********************
+	Business Review
+**********************/
+.b-review h2 {
+	font-size: 22px;
+	color: #000;
+	padding-bottom: 10px;
+}
+.b-review .dashboard-data table {
+	margin-bottom: 30px;
+}
+.dashboard-data .calculation li {
+	text-align: right;
+	text-transform: uppercase;
+	color: #84969d;
+	font-size: 16px;
+	margin: 5px 0;
+}
+.dashboard-data .calculation li span {
+	color: #252525;
+	text-align: left;
+	width: 20%;
+	display: inline-block;
+	padding-left: 15px;
+}
+.dashboard-data .submit-btn {
+	color: #fff;
+	background: #ff9a29;
+	margin-bottom: 30px;
+}
+.b-review ul.status {
+	background: #fff;
+	padding: 15px;
+	text-align: center;
+}
+.b-review [type="radio"] {
+	display: none;
+}
+.b-review ul.status li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.b-review ul.status span {
+	display: block;
+	padding-top: 7px;
+}
+.b-review ul.status li label {
+	width: 110px;
+	height: 80px;
+	line-height: 80px;
+	background: #83a94d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.b-review ul.status li:nth-child(2) label {
+	background: #d8da4a;
+}
+.b-review ul.status li:nth-child(3) label {
+	background: #d74b4b;
+}
+.b-review ul.status li label i {
+	opacity: 0;
+	color: #fff;
+	font-size: 18px;
+}
+.b-review [type="radio"]:checked+label i {
+	opacity: 1;
+}
+/*******************
+congratulations
+***************/
+.congrats-content {
+	width: 500px;
+	text-align: center;
+	background: #fff;
+	padding: 50px 20px;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+	margin: auto;
+}
+.congrats-content h2 {
+	position: relative;
+	color: #056690;
+	font-size: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+.congrats-content h4 {
+	font-size: 22px;
+	color: #101010;
+	font-weight: bold;
+	padding: 20px 0 10px 0;
+}
+.congrats-content h2:after {
+	content: '';
+	width: 100px;
+	height: 5px;
+	background: #ff9a29;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.congrats-content p {
+	font-size: 18px;
+	margin-top: 30px;
+}
+.congrats-content ul.save-btns {
+	margin-top: 50px;
+}
+.congrats .top-sec {
+	height: 100px;
+	background: rgba(126,236,255,1);
+	background: -moz-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(126,236,255,1)), color-stop(44%, rgba(41,157,207,1)), color-stop(100%, rgba(5,102,144,1)));
+	background: -webkit-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: -o-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: -ms-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: linear-gradient(to right, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7eecff', endColorstr='#056690', GradientType=1 );
+}
+.congrats-content > a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 18px;
+}
+/*******************
+Account Settimgs
+********************/
+.logo-set {
+	background: rgba(126,236,255,1);
+	background: -moz-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(126,236,255,1)), color-stop(44%, rgba(41,157,207,1)), color-stop(100%, rgba(5,102,144,1)));
+	background: -webkit-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: -o-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: -ms-linear-gradient(left, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+	background: linear-gradient(to right, rgba(126,236,255,1) 0%, rgba(41,157,207,1) 44%, rgba(5,102,144,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7eecff', endColorstr='#056690', GradientType=1 );
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
+	margin-bottom: 30px;
+}
+.acc-form h2 {
+	color: #056690;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+.acc-form .form-group {
+	background: #dae8ee;
+	padding: 15px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.acc-form label {
+	font-size: 18px;
+	color: #5a666b;
+}
+.acc-form input[type="text"], .acc-form input[type="password"] {
+	background: transparent;
+	font-size: 18px;
+	color: #2498ca;
+	float: right;
+	text-align: right;
+}
+.logo-set .logo-img {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+.logo-set .logo-img .uplaod-icon {
+	position: absolute;
+	right: 0;
+	bottom: 4px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	background: #056690;
+	border-radius: 50%;
+}
+.logo-set .logo-name {
+	font-size: 22px;
+	padding: 5px 0 5px 0;
+}
+.onoffswitch {
+	position: relative;
+	width: 90px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.onoffswitch-checkbox {
+	display: none;
+}
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.onoffswitch-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 30px;
+	padding: 0;
+	line-height: 30px;
+	font-size: 14px;
+	color: white;
+}
+.onoffswitch-inner:before {
+	content: "ON";
+	padding-left: 10px;
+	background-color: #6ba54e;
+}
+.onoffswitch-inner:after {
+	content: "OFF";
+	padding-right: 10px;
+	background-color: #EEEEEE;
+	color: #999999;
+	text-align: right;
+}
+.onoffswitch-switch {
+	display: block;
+	width: 18px;
+	margin: 6px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 56px;
+	border-radius: 20px;
+	transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	right: 0px;
+}
+.notification-settings .form-group > label {
+	padding-top: 5px;
+}
+/*******************
+		Graph
+****************/
+.goal-graph h2 {
+	font-size: 20px;
+	color: #000;
+}
+.goal-graph h6 {
+	color: #056690;
+	font-size: 20px;
+	padding: 25px 0 20px 0;
+}
+ul.graph-reader li {
+	color: #1b1b1b;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 0 0 20px 40px;
+}
+ul.graph-reader li span {
+	width: 20px;
+	height: 20px;
+	background: #76af40;
+	display: inline-block;
+	float: right;
+	margin-right: 35%;
+}
+/*splash*/
+.splash {
+	background: url(../images/splashscreen.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+.spalsh_logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 45%;
+	transform: translateY(-45%);
+}
+span.loader {
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+/*intro*/
+.top_box {
+	background: url(../images/header_back.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100px;
+	background-position: center;
+}
+.intro {
+	padding-top: 50px;
+	text-align: center;
+}
+.intro h2 {
+	font-size: 25px;
+	color: #101010;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.intro h2 span {
+	color: #056690;
+	font-weight: bold;
+}
+.intro h3 {
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #056690;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+.intro p {
+	font-size: 18px;
+	color: #141414;
+	margin-bottom: 35px;
+}
+.intro .box {
+	width: 70%;
+	background: url(../images/intro_back_img.png) no-repeat #299dcf;
+	background-position: right center;
+	text-align: center;
+	border-radius: 8px;
+	padding: 40px 0 40px 20px;
+	margin: auto;
+}
+.intro .box h4 {
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.intro .box ul li {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 22px;
+}
+.intro .box ul li span {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 7px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+}
+.intro .box ul {
+	max-width: 450px;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	text-align: left;
+}
+a.introlink {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	background: #056690;
+	width: 100%;
+	padding: 20px 0px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	max-width: 500px;
+	margin: 80px auto 50px auto;
+	display: block;
+	font-family: 'Arciform';
+}
+/*login*/
+
+
+.top_box h2 {
+	text-align: center;
+	font-size: 25px;
+	padding-top: 35px;
+	color: #fff;
+	position: relative;
+}
+.top_box h2 a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 5px;
+	position: absolute;
+	left: 50px;
+}
+.login .login_img {
+	margin: 40px 0 30px 0;
+}
+.login .form_box {
+	max-width: 590px;
+	width: 100%;
+	margin: 0 auto
+}
+.login .form_box .inner_form {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto
+}
+.login .form_box label, .step .form_box label {
+	display: block;
+	font-size: 16px;
+	color: #c5c5c5;
+	position: relative;
+}
+.login .form_box input, .step .form_box input, .step a.next {
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	color: #056690;
+	padding-left: 5px;
+	padding-right: 50px;
+	border-bottom: 3px solid #eee;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.login .form_box input.mail {
+	background: url(../images/user.png) no-repeat;
+	background-position: 98% center;
+	background-size: 25px;
+}
+.login .form_box input.pass {
+	background: url(../images/pass.png) no-repeat;
+	background-position: 98% center;
+	background-size: 25px;
+}
+.login .form_box input.submit, .login .form_box .register, .step a.next {
+	margin-top: 90px;
+	background: #056690;
+	font-size: 20px;
+	color: #fff !important;
+	border-radius: 50px;
+	margin-bottom: 18px;
+	font-family: 'Arciform';
+	padding-right: 0px;
+}
+.login .form_box a.register {
+	padding: 9px 0px;
+	display: block;
+	text-align: center;
+	margin-top: 0 !important;
+	background: #dae8ee;
+	color: #000 !important;
+}
+.step a.next {
+	padding: 10px 0px;
+	display: block;
+	height: 50px;
+	text-align: center;
+	margin-top: 0 !important;
+	background: #dae8ee;
+	color: #000 !important;
+}
+.login .form_box a.f_pass {
+	font-size: 18px;
+	color: #3b3b3b;
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+	font-style: italic;
+}
+/*step*/
+.step_top {
+	-webkit-box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+.step .box {
+	width: 166px;
+	height: 166px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+.step .set {
+	background: url(../images/steps.jpg) no-repeat;
+	background-size: cover;
+	padding: 50px 0px;
+}
+.step .box img {
+	padding: 35px 0px;
+}
+.step .box span {
+	position: absolute;
+	right: 3px;
+	bottom: 26px;
+	background: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+}
+.step .box span label i {
+	font-size: 18px;
+	color: #056690;
+}
+.step .box span label, .logo-set .logo-img label {
+	cursor: pointer;
+}
+.step input[type="file"], .logo-set .logo-img input[type="file"] {
+	display: none;
+}
+.step .box span img {
+	padding: 5px;
+}
+.step .set h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	margin-top: 20px;
+	padding-bottom: 120px;
+}
+.step .form_box {
+	background: #fff;
+	padding: 40px 35px 0px 35px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: -140px;
+	max-width: 600px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.step a.next {
+	background: #056690;
+	color: #fff !important;
+	font-weight: normal !important;
+}
+.step .form_box input.name {
+	background: url(../images/user.png) no-repeat;
+	background-position: 98% center;
+	background-size: 40px;
+}
+.step .form_box input.passw {
+	background: url(../images/pass.png) no-repeat;
+	background-position: 98% center;
+	background-size: 35px;
+}
+.step .form_box input.company {
+	background: url(../images/build_trans.png) no-repeat;
+	background-position: 98% center;
+	background-size: 40px;
+}
+.step .form_box input.email {
+	background: url(../images/msg_two.png) no-repeat;
+	background-position: 98% center;
+	background-size: 51px;
+}
+.step label.active .passw {
+	background: url(../images/strong.png) no-repeat !important;
+	background-position: 99% center !important;
+	background-size: 30px !important;
+}
+.step2 .form_box input.name {
+	background: url(../images/groups.jpg) no-repeat;
+	background-position: 98% center;
+	background-size: 40px;
+}
+.step .passw {
+	position: relative;
+}
+.step label span.s_pass {
+	position: absolute;
+	right: 48px;
+	top: 51px;
+	font-size: 24px;
+	color: #373737;
+}
+.step .set h2 span {
+	display: block;
+	font-size: 24px;
+	color: #a1e2ff;
+}
+.step3 .box img {
+	max-width: 100px;
+	width: 100%;
+	padding: 47px 0px;
+}
+.step3 form h3 {
+	color: #989898;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.step3 form h3 span {
+	color: #000;
+}
+.step3 form p {
+	font-size: 22px;
+	color: #141414;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.step3 form p a {
+	color: #299dcf;
+}
+.step3 form ul {
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+.step3 form li {
+	list-style: none;
+	width: 50%;
+	vertical-align: middle;
+	float: left;
+}
+.step.step3 ul li:first-child .check-label {
+	-webkit-border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px;
+}
+.step.step3 ul li:last-child .check-label {
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+}
+.step.step3 .check-label {
+	background: #eaf7fc;
+	color: #77939d;
+	font-size: 19px;
+	padding: 25px 10px;
+	cursor: pointer;
+}
+.step.step3 .check-label span {
+	width: 88px;
+	height: 88px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 30px;
+}
+.step.step3 .check-label span.monthly {
+	background: url(../images/cale.png) no-repeat;
+}
+.step.step3 .check-label span.qly {
+	background: url(../images/grph.png) no-repeat;
+}
+.step3 form input[type=radio]:checked+.check-label {
+	background: #056690;
+	color: #fff;
+}
+.step3 form input[type=radio]:checked+.check-label span.monthly {
+	background: url(../images/cale-active.png) no-repeat;
+}
+.step3 form input[type=radio]:checked+.check-label span.qly {
+	background: url(../images/grph-active.png) no-repeat;
+}
+.step3 form input[type=radio] {
+	display: none;
+}
+
+/******************Media Queries**************************/
+@media (min-width:768px) {
+.goal-table table th:last-child {
+	width: 100px;
+}
+.goal-table table td {
+	padding-left: 15px;
+}
+.login .form_box input.submit, .login .form_box .register {
+	margin-top: 20px;
+}
+.login_img img.img-responsive.center-block {
+	max-width: 150px;
+}
+.step3 form li a {
+	font-size: 18px;
+}
+.step a.next {
+	margin-top: 50px !important;
+	margin-bottom: 40px !important;
+}
+.step .form_box input {
+	height: 60px;
+	margin-bottom: 20px;
+}
+.step .form_box input, .step a.next {
+	font-size: 25px;
+}
+.step label span.s_pass {
+	top: 31px !important;
+}
+.login .form_box input.mail, .login .form_box input.pass {
+	background-size: 20px;
+}
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+.team-info ul.team-options li {
+	padding: 0 7px;
+}
+.b-review ul.status li label {
+	width: 90px;
+}
+}
+
+@media (max-width:992px) {
+.goal-add .goal-period, .goal-add .goal-descrption {
+	padding-top: 15px;
+}
+}
+
+@media (max-width:767px) {
+.spalsh_logo {
+	max-width: 430px;
+	margin: 0 auto;
+}
+.intro .box {
+	max-width: 651px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: left;
+}
+.intro_wrap {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.intro {
+	text-align: left;
+}
+.intro .box ul {
+	margin: 0;
+}
+.congrats-content {
+	width: 90%;
+}
+ul.save-btns li, ul.save-btns li a, .serach-bar, .submit-btn {
+	width: 100%;
+}
+.submit-btn {
+	height: 50px;
+	line-height: 50px;
+}
+.goal-edit .goal-descrption {
+	padding-top: 25px;
+}
+.search-box {
+	width: 88%;
+}
+.partner-edit .company-title .company-logo {
+	width: 50px;
+	height: 50px;
+}
+.partner-edit .company-title .company-logo img {
+	width: 65%;
+}
+.partner-edit .input-box {
+	margin: 8px 0 0 15px;
+	padding: 5px;
+	;
+}
+.partner-edit ul.save-btns {
+	margin-top: 70px;
+}
+.common-top .serach-bar {
+	margin: 0 0 0 auto;
+}
+.common-top .search-box {
+	padding: 12px 10px;
+}
+.team-add .team-details {
+	padding-top: 0;
+}
+.dashboard-data .submit-btn {
+	width: 250px;
+}
+.serach-bar {
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,.1);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.talk .serach-bar, .team .serach-bar {
+	box-shadow: none;
+	padding-bottom: 0;
+}
+}
+
+@media (max-width: 600px) {
+.spalsh_logo {
+	max-width: 320px;
+	margin: 0 auto;
+}
+.top_box {
+	height: 100px;
+}
+.intro_wrap {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.intro {
+	padding-top: 20px;
+}
+.login .login_img {
+	margin-top: 50px;
+	margin-bottom: 55px;
+	max-width: 220px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.login .form_box input {
+	width: 100%;
+	height: 50px;
+	font-size: 23px;
+	color: #056690;
+	margin-bottom: 25px;
+}
+.login .form_box input.mail, .login .form_box input.pass {
+	background-size: 30px;
+}
+.login .form_box input.submit, .login .form_box .register {
+	margin-top: 32px;
+	font-size: 20px;
+	margin-bottom: 18px;
+}
+.login .form_box a.register {
+	padding: 13px 0px;
+	height: 50px;
+}
+.login .form_box a.f_pass {
+	font-size: 20px;
+	margin-top: 36px;
+	margin-bottom: 40px;
+}
+.top_box h2 a {
+	left: 20px;
+}
+.step label span.s_pass {
+	top: 28px;
+	font-size: 20px;
+}
+.step .set {
+	padding: 20px 0px;
+}
+.step a.next {
+	height: 50px;
+	margin-top: 20px !important;
+	margin-bottom: 0px!important;
+	padding: 13px 0px;
+}
+.step input {
+	height: 50px !important;
+}
+.top_box h2 {
+	font-size: 16px;
+}
+.top_box h2 a {
+	margin-top: 0px;
+}
+.top_box {
+	height: 80px;
+}
+.step .form_box {
+	padding: 40px 15px;
+}
+.step .form_box input {
+	background-size: 30px !important;
+}
+.step .form_box label {
+	display: block;
+	font-size: 15px;
+	color: #c5c5c5;
+}
+.step .form_box input, .step a.next {
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+.step .form_box input.email {
+	background-size: 41px !important;
+}
+.step .box img {
+	padding: 34px 0px;
+	max-width: 55px;
+}
+.step .box {
+	width: 120px;
+	height: 120px;
+}
+.step .box span img {
+	padding: 5px;
+	max-width: 30px;
+}
+.step .set h2 {
+	font-size: 17px;
+	margin-top: 9px;
+	padding-bottom: 140px;
+}
+.step .set h2 span {
+	display: block;
+	font-size: 16px
+}
+.step3 .box img {
+	padding: 34px 0px;
+	max-width: 70px;
+}
+.step.step3 .check-label span {
+	width: 50px;
+	height: 50px;
+	background-size: 100% !important;
+	margin-left: 0;
+}
+}
+
+@media (max-width:500px) {
+.intro h3 {
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.intro p {
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.intro .box ul li span {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 5px;
+	font-size: 14px;
+}
+.intro .box ul li {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.intro .box h4 {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+a.introlink {
+	padding: 15px 0px;
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
+.spalsh_logo {
+	max-width: 250px;
+	margin: 0 auto;
+}
+.congrats-content h2 br {
+	display: none;
+}
+.partner-item .partner-info a, .team-info ul.team-options li:last-child, .congrats-content h2 {
+	font-size: 30px;
+}
+.team-details h2, .msg-reply-box input[type="text"], .event-details h2, .logo-set .logo-name {
+	font-size: 20px;
+}
+.msg-content h4, .talk-details h2, .current-event h5, ul.contract-info li, .dashboard h4, .congrats-content h4, .acc-form h2 {
+	font-size: 18px;
+}
+.partner-edit .edit-box h4, .goal-table h4, .partner-edit .company-title input, .partner-edit .edit-box textarea, .partner-edit .edit-box input[type="text"], .common-top h3, .common-top .serach-bar input[type="search"], .team-info h5, .common-top a.add-link, .msg-content p, .talk-info h5, .event-info h4, .talk-msg .msg-input input[type="text"], .back-link i, .current-event .event-place, .current-event p, .current-event ul li, .current-event a.add-link, .panel-default .panel-heading, .b-review h2, .dashboard-data .edit-link, .acc-form label, .acc-form input[type="text"], .acc-form input[type="password"], .goal-graph h2, ul.graph-reader li, .step3 form h3, .step3 form p {
+	font-size: 16px;
+}
+.talk-info h6, .event-info span.event-place, .event-info h4 span.event-date, ul.contract-info li a, .panel-title, .progress-top h4, .dash-code h3, .dashboard-data .calculation li, span.msg-date {
+	font-size: 14px;
+}
+.common-top .serach-bar span.plus-icon i, .common-top .search-box i, .common-top h4, .msg-reply-box input[type="submit"], .step.step3 .check-label, .msg-box h6 {
+	font-size: 15px;
+}
+.team-info span, .msg-content span.company-name, .talk-info span.msg-time, .dashboard-data table th, .dashboard-data table td, .logo-title {
+	font-size: 12px;
+}
+.common-top .company-logo {
+	width: 40px;
+	height: 40px;
+}
+.step3 form h3 {
+	margin-bottom: 20px;
+}
+/*.information .panel .company-logo {
+	width: 60px;
+	height: 60px;
+}*/
+.common-top .search-box, .msg-reply-box {
+	padding: 5px;
+}
+.common-top h3 {
+	padding: 9px 0 9px 5px;
+}
+.common-top h4 {
+	top: 10px;
+}
+.common-top .serach-bar span.plus-icon {
+	margin: 5px 0 0 5px;
+}
+.back-link, .dashboard, .dash-code {
+	padding: 15px 0 15px 15px;
+}
+button#bEdit span {
+	margin-right: 0;
+}
+.goal-table table td:nth-child(3), .goal-table table td:nth-child(5) {
+	padding-left: 10px;
+}
+.goal-table table th {
+	font-size: 14px;
+	padding: 10px;
+}
+.goal-table table td {
+	font-size: 14px;
+	padding: 10px 0;
+}
+div#addNewRow, .addNewRow {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+ul.save-btns li a {
+	height: 45px;
+	font-size: 20px;
+	line-height: 45px;
+}
+ul.save-btns {
+	margin-top: 170px;
+}
+.goal-edit h3, .nice-select span.current, .goal-edit .goal-descrption input[type="text"], .person-edit input[type="text"], .person-edit textarea {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.goal-edit h5, .person-edit label {
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+.partner-item .partner-logo {
+	width: 50px;
+	height: 50px;
+}
+.partner-item .partner-logo img, .information .company-logo img {
+	width: 65%;
+}
+.partner-item h3.partner-name {
+	font-size: 18px;
+	padding: 10px 0 10px 10px;
+}
+.partner-item .partner-info.edit-info {
+	margin-top: 8px;
+}
+.partner-item .partner-info.edit-info a {
+	font-size: 16px;
+	width: 100px;
+	padding: 10px 0;
+}
+.serach-bar input[type="search"] {
+	font-size: 15px;
+	width: 80%;
+	margin-left: 0;
+}
+.search-box {
+	width: 75%;
+	padding: 7px 10px;
+}
+.team-details .team-info {
+	padding: 10px 0;
+}
+.team-info ul.team-options li {
+	font-size: 16px;
+	padding: 0 10px;
+}
+.talk-msg .company-logo {
+	width: 30px;
+	height: 30px;
+	left: -34px;
+}
+.talk-info .orange-dot {
+	width: 10px;
+	height: 10px;
+}
+.talk-info .team-name {
+	padding-left: 18px;
+}
+.msg-reply-box button {
+	margin-top: 0;
+}
+.msg-reply-box input[type="submit"] {
+	width: 20%;
+}
+.current-event h3 {
+	font-size: 18px;
+	padding: 10px 0;
+}
+.submit-btn {
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+}
+.person-edit i.fa {
+	bottom: 8px;
+	font-size: 16px;
+}
+ul.contract-info li {
+	padding: 10px 0 10px 30px;
+}
+ul.contract-info li:before {
+	left: 5px;
+}
+.alerts .talk-info {
+	min-height: auto;
+}
+.progress-top .progress {
+	height: 15px;
+}
+.progress-top .breakpoint {
+	width: 1px;
+}
+.progress-top .breakpoint.one {
+	right: 32%;
+}
+.progress-top .breakpoint.two {
+	right: 37%;
+}
+.progress-top .submit-btn {
+	margin: 10px auto;
+}
+.dashboard-data table th, .dashboard-data table td {
+	padding: 7px 5px;
+}
+.dash-code ul li {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+}
+.dashboard-data .panel-body p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.dashboard-data .calculation li span {
+	width: 30%;
+}
+.b-review ul.status li label {
+	width: 70px;
+	height: 50px;
+	line-height: 50px;
+}
+.congrats-content {
+	padding: 30px 15px;
+}
+.common-top a.add-link {
+	padding: 10px 0;
+}
+.logo-set .logo-img {
+	width: 80px;
+	height: 80px;
+}
+.logo-set .logo-img .uplaod-icon {
+	bottom: -6px;
+}
+.logo-set .logo-img .uplaod-icon i {
+	font-size: 14px;
+}
+.goal-graph h6 {
+	font-size: 15px;
+	padding: 10px 0;
+}
+ul.graph-reader li {
+	padding: 0 0 10px 20px;
+}
+ul.graph-reader li span {
+	margin-right: 20%;
+}
+.calendar .common-top {
+	margin-bottom: 0;
+}
+.event-info, .talk-info, .common-top a.go-back {
+	padding: 10px 0;
+}
+.partner-edit .edit-box .company-logo {
+	margin-top: 15px;
+	margin-right: 10px;
+	width: 60px;
+	height: 60px;
+}
+.partner-edit .edit-box .company-logo img {
+	width: 80%;
+}
+.partner-edit .edit-box textarea {
+	height: 100px;
+}
+.partner-edit .edit-box {
+	min-height: 150px;
+}
+.partner-item ul.team-options {
+	padding: 3px 0;
+}
+.team-dept ul.team-options li:first-child {
+	margin-top: -23px;
+}
+}
+
+@media screen and (max-width: 380px) {
+.intro .box {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 15px;
+}
+.intro .box ul li {
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.intro .box h4 {
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+a.introlink {
+	font-size: 18px;
+	margin-top: 50px;
+}
+.intro h3 {
+	font-size: 34px;
+	line-height: 36px;
+}
+.intro h2 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.intro .box {
+	background-size: 35%;
+}
+.login .form_box label {
+	font-size: 18px;
+}
+.login .form_box input {
+	font-size: 20px;
+}
+.login .form_box input.submit, .login .form_box .register {
+	margin-top: 25px;
+	font-size: 16px;
+	margin-bottom: 18px;
+}
+.step_top.top_box h2 {
+	font-size: 18px;
+}
+.step_top.top_box h2 a {
+	margin-top: -2px;
+}
+.common-top .serach-bar input[type="search"] {
+	width: 100px;
+}
+.team-info ul.team-options li {
+	padding: 0 5px;
+}
+.common-top h4, .goal-table table td, .goal-table table th, .b-review ul.status span, .partner-item h3.partner-name {
+	font-size: 12px;
+}
+.goal-table table th {
+	padding: 5px;
+}
+.common-top a.add-link, .common-top h3, .acc-form input[type="text"], .acc-form input[type="password"] {
+	font-size: 14px;
+}
+.b-review ul.status li label {
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+}
+}
+
+@media (max-width: 320px) {
+.top_box h2 a {
+	left: 10px;
+}
+.step.step3 .check-label {
+	padding: 20px 5px;
+}
+.information .common-top .company-logo {
+	width: 40px;
+	height: 40px;
+}
+.information .company-logo {
+	width: 60px;
+	height: 60px;
+}
+.acc-form input[type="text"], .acc-form label, ul.contract-info li a {
+	font-size: 12px;
+}
+.acc-form .form-group {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.partner-edit .input-box {
+	margin: 8px 0 0 5px;
+	width: 180px;
+}
+.partner-edit .input-box input {
+	width: 130px;
+}
+.product-info .common-top h4 {
+	left: auto;
+}
+.team .common-top h3 {
+	font-size: 12px;
+}
+.team .common-top .serach-bar input[type="search"] {
+	font-size: 12px;
+}
+.team .common-top .search-box {
+	padding: 1px;
+	float: left;
+}
+.team .common-top .serach-bar span.plus-icon {
+	float: right;
+}
+.team .common-top .serach-bar {
+	margin-top: 5px;
+}
+.partner-item h3.partner-name {
+	padding-top: 19px;
+}
+.common-top {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+}
+
+@media (orientation:landscape) and (max-width:767px) {
+.top_box {
+	height: 50px;
+}
+.step .box {
+	width: 100px;
+	height: 100px;
+}
+.step .box img {
+	padding: 15px 0px;
+	width: 65%;
+}
+.top_box h2 {
+	font-size: 20px;
+	padding-top: 15px;
+}
+.top_box h2 a {
+	margin-top: 0;
+}
+.step .box span {
+	bottom: 6px;
+}
+.step .set h2, .step .set h2 span, .step3 form h3, .step3 form p {
+	font-size: 17px;
+}
+.step .set {
+	padding: 20px 0px 30px 0px;
+}
+.step3 .box img {
+	padding: 25px 0;
+}
+.step3 form h3, .step3 form p {
+	margin-bottom: 20px;
+}
+}
+.goabtn{
+	padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background: #799FAF;
+    color: white;
+}
+.goalBottom{
+	top: 0;
+    display: inline;
+    font-size: 12px;
+}
+.withborder{
+	border-right: 1px solid black;
+	padding-right: 15px !important;
+}
+.goalspan{
+  color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 42px;
+}
+.goalicon{
+	    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+}

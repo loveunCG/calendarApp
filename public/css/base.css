@@ -1,0 +1,158 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, q, s, small, strong, b, u, i, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td, article, footer, header, menu, nav, section, time, audio, video, button, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	vertical-align: baseline;
+	text-decoration: none;
+	line-height: 1.2
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear {
+	clear: both;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfloat {
+	zoom: 1;
+}
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	overflow: hidden;
+	height: 0;
+}
+.spill {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.multiSpill {
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	/* -webkit-line-clamp:3;*/
+	overflow: hidden;
+}
+input {
+	/*-webkit-appearance: none;
+	-moz-appearance: none;*/
+}
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input:focus {
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+select:focus {
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+textarea:focus {
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+button:focus {
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+button {
+	cursor: pointer;
+}
+select {
+	cursor: pointer;
+}
+input type:checkbox {
+ cursor:pointer;
+}
+input type:radiobox {
+ cursor:pointer;
+}
+a:hover, a:focus, a :active, a:visited {
+	text-decoration: none;
+	outline: none;
+}
+@font-face {
+    font-family: Arciform;
+    src: url(../fonts/Arciform.otf);
+}
+/*****************
+ 	common
+******************/
+.pt-15 {
+	padding-top: 15px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.brd-btm {
+	border-bottom: 3px solid #eee;
+}
+.no-brdr {
+	border:none !important;
+}
+li.edit-link {
+    background: #848484;
+    font-size: 18px !important;
+    width: 90px;
+    text-align: center;
+    padding: 10px 0 !important;
+    border-radius: 5px;
+    text-transform: capitalize;
+	margin-top: 0 !important;
+}
+li.edit-link a {
+    color: #fff !important;
+}
+.bg-red {
+	background:#e5313e !important;
+}
+.bg-green {
+	background:#addfaf !important;
+}
+.bg-green-light {
+	background:#d4e019 !important;
+}
+.bg-red-light {
+	background:#fa9eab !important;
+}
+.grey-color {
+	color:#84969d !important;
+}
+.pad-0 {
+	padding: 0 !important;
+}
+@media(max-width:500px) {
+li.edit-link {
+    font-size: 16px !important;
+    width: 80px;
+    padding: 5px 0 !important;
+}
+}
